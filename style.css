@@ -1,0 +1,126 @@
+:root {
+  --taskCompletedGreen: green;
+  --littleImportantColor: yellow;
+  --importantColor: orange;
+  --veryImportantColor: red;
+  --midPriorityColor: yellow;
+  --highPriorityColor: orange;
+  --veryHighPriorityColor: red;
+  --catMiscColor: RoyalBlue;
+  --catWorkColor: Salmon;
+  --catSchoolColor: LemonChiffon;
+  --catChurchColor: IndianRed;
+  --catChoreColor: SkyBlue;
+  --catFinanceColor: SeaGreen;
+
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 75%;
+}
+
+#newTask{
+
+}
+
+details{
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+
+}
+
+details summary{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 3px;
+
+}
+
+.completeButton{
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: black;
+}
+
+.completeButton:hover{
+  cursor: pointer;
+  border-color: var(--taskCompletedGreen);
+}
+
+.taskCompleted{
+  background-color: var(--taskCompletedGreen)
+}
+.midPriority{
+  border-color: var(--midPriorityColor);
+}
+.highPriority{
+  border-color: var(--highPriorityColor);
+}
+.veryHighPriority{
+  border-color: var(--veryHighPriorityColor);
+}
+
+.coolLable{
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.priorityLvl{
+  padding:10px;
+  background-color: lightgrey;
+}
+
+.backgroundGrey{
+  background-color: grey;
+}
